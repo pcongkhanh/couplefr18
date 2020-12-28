@@ -125,6 +125,10 @@
               "devServerTarget": "couplefr18:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
