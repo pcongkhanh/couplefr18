@@ -1,0 +1,14 @@
+{
+    "News": [
+    {"id": 0, "day": "5/12/2019",  "thread": "Fashion",     "threadChild": "Studio", "path": "assets/img/News/New 0.jpg", "title": "Couture Fashion Week Looks Nothing Like it Used To"},
+    {"id": 1, "day": "10/12/2019", "thread": "Lifesyle",    "threadChild": "Studio", "path": "assets/img/News/New 1.jpg", "title": "Hood By Air Officially Makes Its Return"},
+    {"id": 2, "day": "15/12/2019", "thread": "Fashion",     "threadChild": "Studio", "path": "assets/img/News/New 2.jpg", "title": "Karla Welch's Second Collab with Dockers is Here"},
+    {"id": 3, "day": "20/12/2019", "thread": "Lifesyle",    "threadChild": "Studio", "path": "assets/img/News/New 3.jpg", "title": "See Miuccia Prada's Last Solo Collection"},
+    {"id": 4, "day": "25/12/2019", "thread": "Fashion",     "threadChild": "Studio", "path": "assets/img/News/New 4.jpg", "title": "Alexander McQueen"},
+    {"id": 5, "day": "1/1/2020",   "thread": "Lifesyle",    "threadChild": "Studio", "path": "assets/img/News/New 5.jpg", "title": "Loewe Fr18"},
+    {"id": 6, "day": "5/1/2020",   "thread": "Fashion",     "threadChild": "Studio", "path": "assets/img/News/New 6.jpg", "title": "What on our Desk"},
+    {"id": 7, "day": "10/1/2020",  "thread": "Lifesyle",    "threadChild": "Studio", "path": "assets/img/News/New 7.jpg", "title": "I'll see you again in 25"},
+    {"id": 8, "day": "15/1/2020",  "thread": "Fashion",     "threadChild": "Studio", "path": "assets/img/News/New 8.png", "title": "Look of the Week"},
+    {"id": 9, "day": "20/1/2020",  "thread": "Lifesyle",    "threadChild": "Studio", "path": "assets/img/News/New 9.png", "title": "Dance of Body"}
+    ]
+}

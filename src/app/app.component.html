@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="body">
+    <div class="div-news" *ngIf="!isMobile">
+      <ul class="ul-news" *ngIf="show">
+        <li *ngFor="let new of news.slice().reverse() | slice: 2:6">
+          <a href="">
+            <div class="div-new">
+              <div class="div-new-img">
+                <img src="{{ new.path }}" alt="{{ new.title }}" />
+              </div>
+              <div class="div-new-info">
+                <div class="div-new-title">{{ new.title }}</div>
+                <div class="div-new-readmore">Readmore</div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="div-sticky">
+      <div class="div-main-title" id="main">
+        <h1>{{ title | uppercase }}</h1>
+      </div>
+
+      <div class="div-nav-bar">
+        <div *ngFor="let item of navBar">
+          <p class="p-title" (click)="navClick(item.id)">{{ item.title }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-display">
+      <app-home *ngIf="onPages.clickHome" [newsFromParent]="news" [show2]="show">
+      </app-home>
+
+      <app-news *ngIf="onPages.clickNews"></app-news>
+      <app-lifestyle *ngIf="onPages.clickLifestyle"></app-lifestyle>
+      <app-fashion *ngIf="onPages.clickFashion"></app-fashion>
+      <app-about *ngIf="onPages.clickAbout"></app-about>
+      <app-contact *ngIf="onPages.clickContact"></app-contact>
+    </div>
+  </div>
+</body>
+
+</html>
