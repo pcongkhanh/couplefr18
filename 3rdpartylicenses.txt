@@ -13,8 +13,6 @@ MIT
 @angular/platform-browser
 MIT
 
-couplefr18
-
 css-loader
 MIT
 Copyright JS Foundation and other contributors
