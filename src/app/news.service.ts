@@ -5,7 +5,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root',
 })
 export class NewsService {
-  private NewsUrl = '/assets/Json-mockup/News.json';
+  private NewsUrl = 'assets/Json-mockup/News.json';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
