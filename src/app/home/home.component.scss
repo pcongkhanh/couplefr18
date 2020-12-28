@@ -1,6 +1,11 @@
 .div-home {
   .view-desk {
     .div-studio {
+      &:hover {
+        border-bottom: 2px solid black;
+        display: inline-block;
+        line-height: 1;
+      }
       position: relative;
       margin-bottom: 20px;
       margin-top: 25px;
@@ -57,11 +62,6 @@
           border-bottom: 2px solid transparent;
           display: inline-block;
           line-height: 1;
-          &:hover {
-            border-bottom: 2px solid black;
-            display: inline-block;
-            line-height: 1;
-          }
         }
       }
 
@@ -168,6 +168,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     .div-studio {
+      &:hover {
+        border-bottom: 2px solid black;
+        display: inline-block;
+        line-height: 1;
+      }
       background-color: white;
       width: 100%;
       display: grid;
@@ -201,11 +206,6 @@
           border-bottom: 2px solid transparent;
           display: inline-block;
           line-height: 1;
-          &:hover {
-            border-bottom: 2px solid black;
-            display: inline-block;
-            line-height: 1;
-          }
         }
       }
 
