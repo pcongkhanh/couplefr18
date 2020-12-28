@@ -1,0 +1,194 @@
+.body {
+  max-width: 1440px;
+  margin: auto;
+  .div-news {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    .ul-news {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0;
+      border: 1px solid black;
+      list-style-type: none;
+
+      li:last-child {
+        border-right: none;
+      }
+
+      li {
+        border-right: 1px solid black;
+
+        .div-new {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          font-family: "Cormorant Garamond";
+          font-style: normal;
+          font-weight: normal;
+          color: black;
+
+          .div-new-img {
+            max-height: 125px;
+            max-width: 163px;
+            margin: 5px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .div-new-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-start: 2;
+            margin-left: 5px;
+            margin-right: 15px;
+            &:hover {
+              text-decoration: underline;
+            }
+
+            .div-new-title {
+              grid-column-start: 1;
+              grid-column-end: 3;
+              grid-row-start: 1;
+              grid-row-end: 3;
+              margin-top: auto;
+              margin-bottom: auto;
+              font-size: 24px;
+            }
+            .div-new-readmore {
+              display: flex;
+              align-items: flex-end;
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 2;
+              grid-row-end: 3;
+              margin-bottom: 5px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .div-main-title {
+    margin-top: 25px;
+    h1 {
+      position: relative;
+      text-align: center;
+
+      font-family: "Cormorant Garamond", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 80px;
+
+      color: #000000;
+    }
+  }
+
+  .div-nav-bar {
+    position: relative;
+    margin-top: 20;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    div {
+      border: 1px solid black;
+      border-left: none;
+      grid-row-start: 1;
+
+      p {
+        margin-top: 12px;
+        text-align: center;
+        font-family: "Cormorant Garamond";
+        font-style: normal;
+        font-weight: normal;
+        color: black;
+        font-size: 20px;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    div:last-child {
+      border-right: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    .div-news {
+      .ul-news {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+
+        li:nth-last-child(-n + 2) {
+          grid-row: 2;
+          border-top: 1px solid black;
+        }
+        li:nth-child(2) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .body {
+    margin: 25px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    .content-display {
+      order: 1;
+    }
+
+    .div-sticky {
+      position: sticky;
+      bottom: 0px;
+      order: 2;
+      background-color: white;
+      z-index: 5;
+      filter: drop-shadow(0 -10px 20px gray);
+      .div-main-title {
+        margin-top: unset;
+        border-top: 1px solid black;
+        h1 {
+          height: 40px;
+          font-size: 40px;
+          margin-bottom: 20px;
+          margin-top: 10px;
+        }
+      }
+      .div-nav-bar {
+        order: 3;
+        height: auto;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        margin-top: unset;
+        div {
+          grid-row-start: auto;
+          grid-column: 1;
+          border: unset;
+          border-bottom: 1px solid black;
+
+          &:first-child {
+            border-top: 1px solid black;
+          }
+        }
+      }
+    }
+
+    .div-news {
+      order: 2;
+    }
+  }
+}
