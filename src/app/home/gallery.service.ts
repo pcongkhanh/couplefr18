@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class GalleryService {
-  private galleryUrl = '../assets/Json-mockup/Gallery.json';
+  private galleryUrl = '/assets/Json-mockup/Gallery.json';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };

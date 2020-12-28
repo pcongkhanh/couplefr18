@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class NavBarService {
-  private NavsUrl = '../assets/Json-mockup/Navs.json';
+  private NavsUrl = '/assets/Json-mockup/Navs.json';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
